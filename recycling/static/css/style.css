@@ -57,3 +57,7 @@ body {
     font-weight: 500;
     line-height: 29px; 
 }
+
+.max-width-100 {
+    max-width: 100%;
+}
