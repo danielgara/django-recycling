@@ -44,3 +44,7 @@ body {
 .rc-footer-font a:hover, .rc-footer-font a:active, .rc-footer-font a:focus {
     color: #6ab43e;
 }
+
+.bg-index{
+    background: url("/static/images/slide-1.jpg") no-repeat fixed;
+}
