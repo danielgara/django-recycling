@@ -1,6 +1,6 @@
 {% extends 'base.html' %} 
 {% block content %}
-
+{% load static %}
 <header class="masthead bg-index text-white text-center py-4">
   <div class="container d-flex align-items-center flex-column pt-2">
     <h2>Save the world!</h2>
@@ -10,7 +10,32 @@
 
 <div class="p-3 mt-3">
   <div class="container mb-3">
-    Hola
+    <div class="row text-center">
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto">
+        <img src="{% static 'images/ecology.png' %}" alt="ecology" />
+        <p class="grid-index">Eco System</p>
+        <p>Harmony in Diversity: Nurturing Our Fragile Ecosystems.</p>
+        <p><button type="button" class="btn btn-success">Read more</button></p>
+      </div>
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto">
+        <img src="{% static 'images/logo.png' %}" alt="logo" />
+        <p class="grid-index">Recycling</p>
+        <p>Reduce, Reuse, Recycle: For a Sustainable Future.</p>
+        <p><button type="button" class="btn btn-success">Read more</button></p>
+      </div>
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto">
+        <img src="{% static 'images/water.png' %}" alt="water" />
+        <p class="grid-index">Save Water</p>
+        <p>Every drop counts: Conserve water, sustain life.</p>
+        <p><button type="button" class="btn btn-success">Read more</button></p>
+      </div>
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto">
+        <img src="{% static 'images/secure.png' %}" alt="secure" />
+        <p class="grid-index">Save Forests</p>
+        <p>Protecting forests, preserving life for generations to come.</p>
+        <p><button type="button" class="btn btn-success">Read more</button></p>
+      </div>
+    </div>
   </div>
 </div>
 {% endblock content %} 
