@@ -1,8 +1,32 @@
 {% extends 'base.html' %} 
 {% block content %}
+{% load static %}
 <div class="p-3">
   <div class="container mb-3">
-    About
+    <div class="row mt-3">
+      <div class="col-md-6 col-lg-8 col-xl-6 mx-auto mb-4">
+        <b>ABOUT US</b>
+        <hr />
+        <p class="font-13 rc-footer-font">Introducing our innovative recycling app! Our app is designed to make
+           eco-conscious living more accessible and convenient. With a user-friendly interface, 
+           it simplifies the process of disposing of trash in the correct locations.</p>
+        <p class="font-13 rc-footer-font">By simply scanning a barcode or taking a photo of an item, our app identifies 
+          the material and provides detailed instructions on how and where to recycle it properly. 
+          Whether it's plastics, paper, glass, or electronic waste, our app guides users to the nearest recycling centers, 
+          collection points, or drop-off locations.</p>
+        <p class="font-13 rc-footer-font">In addition to promoting responsible waste disposal, our app also tracks your 
+          eco-friendly efforts, providing insights into your environmental impact, such as the amount of waste you've 
+          diverted from landfills and the energy savings achieved through recycling. It even offers rewards and challenges
+           to encourage and motivate users to recycle more efficiently.</p>
+        <p class="font-13 rc-footer-font">Join us in the mission to reduce waste and protect our planet.
+           With our recycling app, you'll not only make a positive impact on the environment but also experience 
+           the convenience of sustainable living at your fingertips. Together, let's contribute to a greener, 
+           cleaner future.</p>
+      </div>
+      <div class="col-md-6 col-lg-8 col-xl-6 mx-auto mb-4 text-center">
+        <img src="{% static 'images/green-rock.jpg' %}" alt="labout" />
+      </div>
+    </div>
   </div>
 </div>
 {% endblock content %} 
