@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  {% load static %}
+  <head>
+    <title>Recycling App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/theme-style.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />  
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+      <div class="container">
+        <a class="navbar-brand" href="{% url 'home.index' %}">
+          Home
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    
+    <div class="container">
+      {% block content %}
+      {% endblock content %}
+    </div>
+
+    <!--<footer class="text-center text-lg-start bg-light text-muted mt-4">
+      <div class="text-center p-4">
+        © Copyright - EAFIT
+      </div>
+    </footer>-->
+    
+    <div id="footer" class="footer-section footer-style-default footer-skin-dark">
+      <div id="footer-widgets-container" class="footer-widgets-section">
+         <div class="container">
+            <div class="zozo-row row">
+               <div id="footer-widgets-1" class="footer-widgets col-md-3 col-sm-6 col-xs-12">
+                  <div id="text-2" class="widget widget_text">
+                     <div class="textwidget">
+                        <p><img decoding="async" loading="lazy" class="margin-bottom-20" src="https://demo.zozothemes.com/gosolar/wp-content/uploads/sites/3/2021/07/logo.png" alt="footer-logo" width="195" height="50" /></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        <div class="zozo-features-list-wrapper">
+                           <div class="features-list">
+                              <div class="features-list-inner address-icon list-text-default" style="margin-bottom: 13px;">
+                                 <div class="list-desc" style="margin-left: 35px;">
+                                    <p>Envato, Victoria St 355, Australia</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="zozo-features-list-wrapper">
+                           <div class="features-list">
+                              <div class="features-list-inner envelope-icon list-text-default" style="margin-bottom: 13px;">
+                                 <div class="list-desc" style="margin-left: 35px;">
+                                    <p>Email: Hello@aven.com</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="zozo-features-list-wrapper">
+                           <div class="features-list">
+                              <div class="features-list-inner call-icon list-text-default" style="margin-bottom: 13px;">
+                                 <div class="list-desc" style="margin-left: 35px;">
+                                    <p>Phone: +99 (101) 001 99</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div id="footer-widgets-2" class="footer-widgets col-md-3 col-sm-6 col-xs-12">
+                  <div id="recent-posts-3" class="widget widget_recent_entries">
+                     <h3 class="widget-title">Latest News</h3>
+                     <ul>
+                        <li>
+                           <a href="https://demo.zozothemes.com/gosolar/environment-perspective/">Environment Perspective</a>
+                        </li>
+                        <li>
+                           <a href="https://demo.zozothemes.com/gosolar/new-ecological-bulbs/">New Ecological Bulbs</a>
+                        </li>
+                        <li>
+                           <a href="https://demo.zozothemes.com/gosolar/protect-the-environment/">Protect the Environment</a>
+                        </li>
+                        <li>
+                           <a href="https://demo.zozothemes.com/gosolar/make-plants-alive/">Make Plants Alive</a>
+                        </li>
+                        <li>
+                           <a href="https://demo.zozothemes.com/gosolar/migration-of-animals/">Migration of Animals</a>
+                        </li>
+                        <li>
+                           <a href="https://demo.zozothemes.com/gosolar/how-to-recycle/">How To Recycle</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div id="footer-widgets-3" class="footer-widgets col-md-3 col-sm-6 col-xs-12">
+                  <div id="nav_menu-2" class="widget widget_nav_menu">
+                     <h3 class="widget-title">Quick Links</h3>
+                     <div class="menu-footer-menu-container">
+                        <ul id="menu-footer-menu" class="menu">
+                           <li id="menu-item-913" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-913"><a href="https://demo.zozothemes.com/gosolar/about-us/">About Us</a></li>
+                           <li id="menu-item-914" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-914"><a href="https://demo.zozothemes.com/gosolar/campaign-grid-view/">Campaigns</a></li>
+                           <li id="menu-item-919" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-919"><a href="https://demo.zozothemes.com/gosolar/faq/">FAQ</a></li>
+                           <li id="menu-item-915" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-915"><a href="https://demo.zozothemes.com/gosolar/our-events/">Our Events</a></li>
+                           <li id="menu-item-916" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-916"><a href="https://demo.zozothemes.com/gosolar/our-team/">Our Team</a></li>
+                           <li id="menu-item-917" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-917"><a href="https://demo.zozothemes.com/gosolar/services/">Services</a></li>
+                           <li id="menu-item-918" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-918"><a href="https://demo.zozothemes.com/gosolar/testimonials/">Testimonials</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div id="footer-widgets-4" class="footer-widgets col-md-3 col-sm-6 col-xs-12">
+                  <div id="zozo_mailchimp_form_widget-widget-2" class="widget zozo_mailchimp_form_widget">
+                     <h3 class="widget-title">Subscribe Us</h3>
+                     <p class="subscribe-desc">Subscribe to our newsletter!</p>
+                     <div id="mc-subscribe-widget1" class="zozo-mc-form subscribe-form mailchimp-form-wrapper">
+                        <p class="mailchimp-msg zozo-form-success"></p>
+                        <form action="#" method="post" id="zozo-mailchimp-form-widget1" name="zozo-mailchimp-form-widget1" class="zozo-mailchimp-form" data-email_not_empty="The email address is required" data-email_valid="The input is not a valid email address">
+                           <div class="mailchimp-email zozo-form-group-addon">
+                              <div class="input-group form-group">
+                                 <input type="text" placeholder="@yourmail.com" class="zozo-subscribe input-email form-control" value="" name="subscribe_email" id="subscribe_email">
+                                 <div class="input-group-btn">
+                                    <button type="submit" id="zozo_mc_form_widget_submit" name="zozo_mc_submit" class="btn mc-subscribe zozo-submit"><i class="simple-icon icon-paper-plane"></i></button>
+                                 </div>
+                              </div>
+                           </div>
+                           <input type="hidden" id="zozo_mc_form_widget_list" name="zozo_mc_form_list" value="8720f4a3d2">															
+                        </form>
+                     </div>
+                  </div>
+                  <div id="text-3" class="widget widget_text">
+                     <h3 class="widget-title">Working Hours</h3>
+                     <div class="textwidget">
+                        <p><strong>Monday &#8211; Friday:</strong> 7:30am &#8211; 18:00pm<br />
+                           <strong>Saturday &#8211; Sunday:</strong> 7:30am &#8211; 1:00pm
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- .row -->
+         </div>
+      </div>
+      <!-- #footer-widgets-container -->
+      <div id="footer-copyright-container" class="footer-copyright-section">
+         <div class="container">
+            <div class="zozo-row row">
+               <div class="col col-sm-6 col-md-6 col-xs-12">
+                  <div id="copyright-text" class="footer-copyright-left">
+                     <p>Designed by <a href="https://zozothemes.com/">zozothemes.com</a></p>
+                  </div>
+               </div>
+               <div class="col col-sm-6 col-md-6 col-xs-12">
+                  <div id="footer-widgets-footer-social-sidebar" class="footer-widgets footer-social-sidebar">
+                     <div id="zozo_social_link_widget-widget-2" class="widget zozo_social_link_widget">
+                        <ul class="zozo-social-icons soc-icon-transparent soc-icon-size-normal text-center">
+                           <li class="facebook"><a target="_blank" href="https://www.facebook.com/zozothemes.official"><i class="fa fa-facebook"></i></a></li>
+                           <li class="twitter"><a target="_blank" href="https://twitter.com/zozothemes"><i class="fa fa-twitter"></i></a></li>
+                           <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/company/zozo-themes/?viewAsMember=true"><i class="fa fa-linkedin"></i></a></li>
+                           <li class="instagram"><a target="_blank" href="https://www.instagram.com/zozothemesofficial/"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- #footer-copyright-container -->
+   </div>
+   <!-- #footer -->
+  </body>
+</html>

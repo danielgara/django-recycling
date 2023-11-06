@@ -1,0 +1,38 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.rc-header-top{
+    background-color: #6AB43E;
+}
+
+.rc-header-top-contact{
+    font-size: 15px;
+}
+
+.rc-footer {
+    background-color: #202020;
+}
+
+.rc-footer-bottom {
+    background-color: #2E2E2E;
+}
+
+.rc-footer-bottom-copy{
+    font-size: 14px;
+    margin: 0;
+    line-height: 38px;
+}
+
+.rc-footer-bottom-copy a{
+    color: #6ab43e;
+    text-decoration: none;
+}
+
+.rc-footer-bottom-copy a:hover, .rc-footer-bottom-copy a:active, .rc-footer-bottom-copy a:focus {
+    color: #fff;
+}
+
+.font-13 {
+    font-size: 13px;
+}
