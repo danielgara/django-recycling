@@ -41,7 +41,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <a class="nav-link" href="">ABOUT</a>
+            <a class="nav-link" href="{% url 'home.about' %}">ABOUT</a>
             <a class="nav-link" href="">IMAGES</a>
             <a class="nav-link" href="">CONTACT</a>
           </div>
@@ -49,13 +49,9 @@
       </div>
     </nav>
     <!-- Navbar -->
-    
-    <div class="p-3">
-      <div class="container mb-3">
-        {% block content %}
-        {% endblock content %}
-      </div>
-    </div>
+
+    {% block content %}
+    {% endblock content %}
 
     <!-- Footer -->
     <section class="p-3 rc-footer">
@@ -72,7 +68,7 @@
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <b>LINKS</b>
             <hr />
-            <p class="font-13 rc-footer-font"><a class="nav-link" href="">About</a></p>
+            <p class="font-13 rc-footer-font"><a class="nav-link" href="{% url 'home.about' %}">About</a></p>
             <p class="font-13 rc-footer-font"><a class="nav-link" href="">Images</a></p>
             <p class="font-13 rc-footer-font"><a class="nav-link" href="">Contact</a></p>
           </div>
