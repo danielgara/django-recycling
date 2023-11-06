@@ -36,3 +36,11 @@ body {
 .font-13 {
     font-size: 13px;
 }
+
+.rc-footer-font {
+    color: #7F7F7F;
+}
+
+.rc-footer-font a:hover, .rc-footer-font a:active, .rc-footer-font a:focus {
+    color: #6ab43e;
+}
